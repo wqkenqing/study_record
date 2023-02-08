@@ -17,8 +17,8 @@ public class FlinkCount {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         DataStreamSource<String> textSource = env.readTextFile("/Users/kuiqwang/Desktop/tengxun_class/study-flink/src/main/resources/carFlow_all_column_test.txt");
-        textSource.map(s -> Tuple2.of(s.split(",")[2], 1)).returns(Types.TUPLE(Types.STRING,Types.INT)).keyBy(0).sum(1).filter(s -> Integer.valueOf(s.f1) > 2).print();
-
+        textSource.map(s -> Tuple2.of(s.split(",")[2], 1)).returns(Types.TUPLE(Types.STRING,Types.INT)).keyBy(0).sum(1).filter(s->Integer.valueOf(s.f1)>2)
+        .print();
         env.execute();
     }
 

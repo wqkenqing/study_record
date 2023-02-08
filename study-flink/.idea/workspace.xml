@@ -248,7 +248,7 @@
       <workItem from="1675666861418" duration="3604000" />
       <workItem from="1675736248754" duration="4284000" />
       <workItem from="1675749662699" duration="9930000" />
-      <workItem from="1675823118629" duration="11631000" />
+      <workItem from="1675823118629" duration="13252000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
@@ -352,18 +352,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>29</line>
+          <line>28</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>34</line>
+          <line>33</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>32</line>
+          <line>31</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
