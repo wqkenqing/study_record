@@ -1,14 +1,9 @@
 package sunrise.demo.stream;
 
 import com.alibaba.fastjson2.JSONObject;
-import org.apache.avro.data.Json;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
-import org.apache.flink.api.common.serialization.TypeInformationSerializationSchema;
-import org.apache.flink.api.common.typeinfo.Types;
-import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.codehaus.jackson.map.util.JSONPObject;
 
 
 /**
