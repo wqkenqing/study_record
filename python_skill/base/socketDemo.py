@@ -21,6 +21,6 @@ while True:
     carInfo.__setitem__("carSpeed",random.randint(0, 100))
     c.send(json.dumps(carInfo).encode())
     c.send("\n".encode())
-    # time.sleep(3)
+    time.sleep(3)
 c.close()
 

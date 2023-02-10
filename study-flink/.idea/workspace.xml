@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../python_skill/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_skill/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_skill/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_skill/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_skill/.idea/python_skill.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_skill/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_skill/base/dmo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../python_skill/base/socketDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python_skill/base/socketDemo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +38,16 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -163,8 +166,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sunrise.demo.state" />
+      <recent name="sunrise.demo.function" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.ValueStateDemo">
+  <component name="RunManager" selected="Application.ReduceStateDemo">
     <configuration name="CreateCarInfoDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.CreateCarInfoDemo" />
       <module name="StudyFlink" />
@@ -178,8 +185,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeyDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.KeyDemo" />
+    <configuration name="FlatMapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.FlatMapDemo" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
@@ -204,12 +211,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SplitDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.SplitDemo" />
+    <configuration name="ReduceStateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.state.ReduceStateDemo" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.stream.*" />
+          <option name="PATTERN" value="sunrise.demo.state.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -232,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ValueStateDemo" />
+        <item itemvalue="Application.ReduceStateDemo" />
         <item itemvalue="Application.MapStateDemo" />
+        <item itemvalue="Application.FlatMapDemo" />
+        <item itemvalue="Application.ValueStateDemo" />
         <item itemvalue="Application.CreateCarInfoDemo" />
-        <item itemvalue="Application.SplitDemo" />
-        <item itemvalue="Application.KeyDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +273,7 @@
       <workItem from="1675666861418" duration="3604000" />
       <workItem from="1675736248754" duration="4284000" />
       <workItem from="1675749662699" duration="9930000" />
-      <workItem from="1675823118629" duration="29384000" />
+      <workItem from="1675823118629" duration="43320000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
@@ -387,6 +394,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
           <line>42</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/function/CarReduceFuntion.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
