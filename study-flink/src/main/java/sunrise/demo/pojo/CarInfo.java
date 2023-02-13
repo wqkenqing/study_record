@@ -12,4 +12,5 @@ import lombok.Data;
 public class CarInfo {
     private String carNumber;
     private Integer carSpeed;
+    private Long eventTime;
 }

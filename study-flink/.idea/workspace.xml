@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="" />
+    <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../PdfTool" beforeDir="false" afterPath="$PROJECT_DIR$/../PdfTool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../word-to-pdf-and-pdf-to-word" beforeDir="false" afterPath="$PROJECT_DIR$/../word-to-pdf-and-pdf-to-word" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +171,7 @@
       <recent name="sunrise.demo.function" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AggStateDemo">
+  <component name="RunManager" selected="Application.TumblingWindowDemo">
     <configuration name="AggStateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sunrise.demo.state.AggStateDemo" />
       <module name="StudyFlink" />
@@ -221,12 +224,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValueStateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.state.ValueStateDemo" />
+    <configuration name="TumblingWindowDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.TumblingWindowDemo" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.state.*" />
+          <option name="PATTERN" value="sunrise.demo.window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TumblingWindowDemo" />
         <item itemvalue="Application.AggStateDemo" />
         <item itemvalue="Application.ReduceStateDemo" />
         <item itemvalue="Application.MapStateDemo" />
         <item itemvalue="Application.FlatMapDemo" />
-        <item itemvalue="Application.ValueStateDemo" />
       </list>
     </recent_temporary>
   </component>
