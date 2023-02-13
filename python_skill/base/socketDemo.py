@@ -18,8 +18,8 @@ while True:
     number = random.randint(0, 100)
     carInfo = {}
     caridj = carid + str(number)
-    carInfo.__setitem__("carNumber", caridj)
-    carInfo.__setitem__("carSpeed", random.randint(0, 100))
+
+    carInfo.__setitem__("carSpeed",random.randint(0, 100))
     c.send(json.dumps(carInfo).encode())
     c.send("\n".encode())
     time.sleep(1)
