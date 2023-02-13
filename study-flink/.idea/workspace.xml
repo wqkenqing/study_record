@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../python_skill/base/dmo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_skill/base/socketDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python_skill/base/socketDemo.py" afterDir="false" />
-    </list>
+    <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,13 +168,13 @@
       <recent name="sunrise.demo.function" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReduceStateDemo">
-    <configuration name="CreateCarInfoDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.CreateCarInfoDemo" />
+  <component name="RunManager" selected="Application.AggStateDemo">
+    <configuration name="AggStateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.state.AggStateDemo" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.stream.*" />
+          <option name="PATTERN" value="sunrise.demo.state.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -239,11 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AggStateDemo" />
         <item itemvalue="Application.ReduceStateDemo" />
         <item itemvalue="Application.MapStateDemo" />
         <item itemvalue="Application.FlatMapDemo" />
         <item itemvalue="Application.ValueStateDemo" />
-        <item itemvalue="Application.CreateCarInfoDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +270,7 @@
       <workItem from="1675666861418" duration="3604000" />
       <workItem from="1675736248754" duration="4284000" />
       <workItem from="1675749662699" duration="9930000" />
-      <workItem from="1675823118629" duration="43320000" />
+      <workItem from="1675823118629" duration="47221000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
