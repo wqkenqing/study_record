@@ -7,4 +7,5 @@ package sunrise.demo.function.window;
  * @desc
  */
 public class ReduceWindowFuntion {
+
 }

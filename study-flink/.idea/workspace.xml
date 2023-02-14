@@ -5,101 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../python_skill/base/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_skill/base/.idea/base.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_skill/base/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_skill/base/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_skill/base/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../python_skill/base/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudyFlink.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/window/ReduceWindowFuntion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_skill/base/socketDemo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python_skill/base/socketDemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_skill/base/ip_pick.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/pojo/CarInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/pojo/CarInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/AggStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/AggStateDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/MapStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/MapStateDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/batch/WordCount.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/WordCount.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/cep/OrderMonitorByCEP.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/cep/OrderMonitorByState.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/cep/TestCEPByLogin.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/checkpoint/CheckpointTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/conntable/BroadCastStream.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/conntable/CacheFileDemo.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/conntable/TimerQueryTable.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/sink/FileSInkTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/sink/HBaseSinkTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/sink/KafkaSinkTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/sink/MySQlSinkTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/sink/RedisSinkTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/source/CustomSourceStandalone.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/source/FlinkKafkaProducer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/source/ParallCustomSource.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/source/ReadCollections.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/source/ReadHDfS.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/source/ReadKafka.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/source/ReadKafkaNoKey.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/state/AggregateStateTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/state/ListStateTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/state/ReducingStateTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/state/ValueStateTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/BroadCastTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/CarFlowAnaly.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/CoFlatMap.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/ConnectOperator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/CustomPartitioner.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/DIstributeCache.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/ForwardTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/Itera.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/MapOperator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/PartitonerTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/ProcessAPITest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/Rescale.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/SideOutputOperator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/SplitOperator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/UnionOperator.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/transformation/WC2Redis.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/util/DataUtils.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/util/DateUtils.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/util/HBaseUtil.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/util/PropertiesUtils.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/AllowLateness.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/Demo01.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/EventTimeWordCount.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/PeriodicWatermarkTest1.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/PeriodicWatermarkTest2.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/PunctuatedWatermark.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/SessionWindowTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/SlidingTimeWindowKeyedStream.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/TimeWindowNoKeyedStream.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/TublingTimeWindowKeyedStream.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/TubmingCountWindowKeyedStream.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/window/TubmingCountWindowNoKeyedStream.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/windowt/EventTimeDelayWindow.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/windowt/EventTimeWindow.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/stream/windowt/PunctuatedWatermarkTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/table/Test01.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/table/Test02.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/table/WordCount.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/tableAndSQL/CreateTableEnvironment.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/tableAndSQL/CreateTableFromDataStream.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/tableAndSQL/CreateTableFromFile.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/tableAndSQL/TestFlinkSQL.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/tableAndSQL/TestTableAPI.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/tableAndSQL/TestTableAPIWindow.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/tableAndSQL/TestUDF.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/test/Demo01StatisCarFlow.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/test/Demo02SpeedAVG.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/test/Demo03SortSpeed.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/test/Demo04MaxMinSpeed.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/test/SlidingCountWindowTest.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/test/SlidingTimeWindowKeyed05.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/test/TumblingCountWindowKeyed03.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/test/TumblingCountWindowNoKeyed04.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/test/TumblingTimeWindowKeyed01.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/msb/test/TumblingTimeWindowNoKeyed02.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sunrise/demo/state/AggStateDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sunrise/demo/state/AggStateDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/window/ReduceWindowFuntion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/window/ReduceWindowFuntion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,12 +187,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlatMapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.FlatMapDemo" />
+    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.Demo" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.stream.*" />
+          <option name="PATTERN" value="sunrise.demo.window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -333,10 +242,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TumblingWindowStream" />
+        <item itemvalue="Application.Demo" />
         <item itemvalue="Application.MapStateDemo" />
         <item itemvalue="Application.AggStateDemo" />
         <item itemvalue="Application.ReduceStateDemo" />
-        <item itemvalue="Application.FlatMapDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -367,7 +276,7 @@
       <workItem from="1675736248754" duration="4284000" />
       <workItem from="1675749662699" duration="9930000" />
       <workItem from="1675823118629" duration="49287000" />
-      <workItem from="1676251947295" duration="10168000" />
+      <workItem from="1676251947295" duration="16409000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
@@ -493,6 +402,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/function/CarReduceFuntion.java</url>
           <line>25</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

@@ -1,6 +1,7 @@
 package sunrise.demo.window;
 
 import com.alibaba.fastjson2.JSONObject;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.typeinfo.Types;
 import org.apache.flink.api.java.tuple.Tuple2;
@@ -29,6 +30,7 @@ import java.time.Duration;
  * @time 2023/2/13
  * @desc
  */
+@Slf4j
 public class TumblingWindowStream {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
@@ -61,8 +63,14 @@ public class TumblingWindowStream {
                     public Watermark getCurrentWatermark() {
                         return new Watermark(currentTimestamp);
                     }
-                }).keyBy(CarInfo::getCarNumber).window(TumblingEventTimeWindows.of(Time.seconds(5)));
-
+                }).keyBy(CarInfo::getCarNumber).window(TumblingEventTimeWindows.of(Time.seconds(5)))
+                .reduce((s1, s2) -> {
+                    CarInfo info = new CarInfo();
+                    info.setCarSpeed(s1.getCarSpeed() + s2.getCarSpeed());
+                    info.setCarNumber(s1.getCarNumber());
+                    log.info("there is new object info:{}", info.toString());
+                    return info;
+                }).print();
         env.execute();
     }
 }
