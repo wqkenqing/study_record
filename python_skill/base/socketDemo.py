@@ -17,9 +17,14 @@ while True:
     carid = "carNo-"
     number = random.randint(0, 100)
     carInfo = {}
+    ## 车牌
     caridj = carid + str(number)
-
-    carInfo.__setitem__("carSpeed",random.randint(0, 100))
+    ##事件时间
+    millis = int(round(time.time() * 1000))
+    ##封状CarInfo，并转成json字符串
+    carInfo.__setitem__("carNumber", caridj)
+    carInfo.__setitem__("carSpeed", random.randint(0, 100))
+    carInfo.__setitem__("eventTime", millis)
     c.send(json.dumps(carInfo).encode())
     c.send("\n".encode())
     time.sleep(1)
