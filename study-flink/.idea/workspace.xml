@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/study_record.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PdfTool" beforeDir="false" afterPath="$PROJECT_DIR$/../PdfTool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../word-to-pdf-and-pdf-to-word" beforeDir="false" afterPath="$PROJECT_DIR$/../word-to-pdf-and-pdf-to-word" afterDir="false" />
     </list>
@@ -155,6 +162,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -274,6 +283,8 @@
       <workItem from="1675736248754" duration="4284000" />
       <workItem from="1675749662699" duration="9930000" />
       <workItem from="1675823118629" duration="47221000" />
+      <workItem from="1676299336750" duration="276000" />
+      <workItem from="1676378237699" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
