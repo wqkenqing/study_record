@@ -5,10 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../python_skill/base/ip_pick.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/AvgEventUrlAggFunticon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/pojo/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/env/EnvDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/env/env.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/source/AutoEventSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/source/AutoEventSourceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/source/KafkaSourceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/source/StreamSourceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/transform/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/transform/Demo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/transform/Demo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/CoustomWatermarkWindowStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/SessionWindowDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/SlideEventWindowStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/TumblingEventWindowStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/TumblingProcessWindowsStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/watermark/CustomEventPeriodicGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/watermark/CustomEventWatermarkStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/watermark/CustomPeriodicGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/watermark/CustomWatermarkStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/window/ReduceWindowFuntion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/window/ReduceWindowFuntion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyFlink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFlink.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/CoDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CreateCarInfoDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/CreateCarInfoDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/FlatMapDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/FlatMapDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/KeyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/KeyDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/SplitDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/TumblingWindowStream.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,17 +194,19 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="sunrise.demo.state" />
       <recent name="sunrise.demo.function" />
+      <recent name="sunrise.demo.window.time.watermark" />
+      <recent name="sunrise.demo.window.time" />
+      <recent name="sunrise.demo.state" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TumblingWindowStream">
-    <configuration name="AggStateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.state.AggStateDemo" />
+  <component name="RunManager" selected="Application.SessionWindowDemo">
+    <configuration name="CoustomWatermarkWindowStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.time.CoustomWatermarkWindowStream" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.state.*" />
+          <option name="PATTERN" value="sunrise.demo.window.time.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,12 +214,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.Demo" />
+    <configuration name="SessionWindowDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.time.SessionWindowDemo" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.window.*" />
+          <option name="PATTERN" value="sunrise.demo.window.time.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -200,12 +227,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapStateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.state.MapStateDemo" />
+    <configuration name="SlideEventWindowStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.time.SlideEventWindowStream" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.state.*" />
+          <option name="PATTERN" value="sunrise.demo.window.time.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -213,12 +240,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReduceStateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.state.ReduceStateDemo" />
+    <configuration name="TumblingEventWindowStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.time.TumblingEventWindowStream" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.state.*" />
+          <option name="PATTERN" value="sunrise.demo.window.time.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -226,12 +253,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TumblingWindowStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.TumblingWindowStream" />
+    <configuration name="TumblingProcessWindowsStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.time.TumblingProcessWindowsStream" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.window.*" />
+          <option name="PATTERN" value="sunrise.demo.window.time.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -241,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TumblingWindowStream" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.MapStateDemo" />
-        <item itemvalue="Application.AggStateDemo" />
-        <item itemvalue="Application.ReduceStateDemo" />
+        <item itemvalue="Application.SessionWindowDemo" />
+        <item itemvalue="Application.CoustomWatermarkWindowStream" />
+        <item itemvalue="Application.SlideEventWindowStream" />
+        <item itemvalue="Application.TumblingEventWindowStream" />
+        <item itemvalue="Application.TumblingProcessWindowsStream" />
       </list>
     </recent_temporary>
   </component>
@@ -276,7 +303,8 @@
       <workItem from="1675736248754" duration="4284000" />
       <workItem from="1675749662699" duration="9930000" />
       <workItem from="1675823118629" duration="49287000" />
-      <workItem from="1676251947295" duration="16409000" />
+      <workItem from="1676251947295" duration="18686000" />
+      <workItem from="1676426535800" duration="17994000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
@@ -379,39 +407,9 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/function/CarReduceFuntion.java</url>
           <line>25</line>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

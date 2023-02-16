@@ -1,4 +1,4 @@
-package sunrise.demo.stream;
+package sunrise.demo.stream.old;
 
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;

@@ -2,6 +2,7 @@ package sunrise.demo.window.time.watermark;
 
 import org.apache.flink.api.common.eventtime.*;
 import sunrise.demo.pojo.CarInfo;
+import sunrise.demo.pojo.Event;
 
 import java.time.Duration;
 
@@ -11,34 +12,35 @@ import java.time.Duration;
  * @time 2023/2/15
  * @desc 自定义水位线
  */
-public class CustomWatermarkStrategy implements WatermarkStrategy<CarInfo> {
+public class CustomEventWatermarkStrategy implements WatermarkStrategy<Event> {
     @Override
-    public WatermarkGenerator<CarInfo> createWatermarkGenerator(WatermarkGeneratorSupplier.Context context) {
-        return new CustomPeriodicGenerator();
+    public WatermarkGenerator<Event> createWatermarkGenerator(WatermarkGeneratorSupplier.Context context) {
+        return new CustomEventPeriodicGenerator();
     }
 
     @Override
-    public TimestampAssigner<CarInfo> createTimestampAssigner(TimestampAssignerSupplier.Context context) {
-        return new SerializableTimestampAssigner<CarInfo>() {
+    public TimestampAssigner<Event> createTimestampAssigner(TimestampAssignerSupplier.Context context) {
+        return new SerializableTimestampAssigner<Event>() {
             @Override
-            public long extractTimestamp(CarInfo carInfo, long l) {
-                return carInfo.getEventTime();
+            public long extractTimestamp(Event event, long l) {
+                return event.getTimestamp();
             }
+
         };
     }
 
     @Override
-    public WatermarkStrategy<CarInfo> withTimestampAssigner(TimestampAssignerSupplier<CarInfo> timestampAssigner) {
+    public WatermarkStrategy<Event> withTimestampAssigner(TimestampAssignerSupplier<Event> timestampAssigner) {
         return WatermarkStrategy.super.withTimestampAssigner(timestampAssigner);
     }
 
     @Override
-    public WatermarkStrategy<CarInfo> withTimestampAssigner(SerializableTimestampAssigner<CarInfo> timestampAssigner) {
+    public WatermarkStrategy<Event> withTimestampAssigner(SerializableTimestampAssigner<Event> timestampAssigner) {
         return WatermarkStrategy.super.withTimestampAssigner(timestampAssigner);
     }
 
     @Override
-    public WatermarkStrategy<CarInfo> withIdleness(Duration idleTimeout) {
+    public WatermarkStrategy<Event> withIdleness(Duration idleTimeout) {
         return WatermarkStrategy.super.withIdleness(idleTimeout);
     }
 }
