@@ -1,4 +1,4 @@
-package sunrise.demo.function;
+package sunrise.demo.function.agg;
 
 import org.apache.flink.api.common.functions.RichFlatMapFunction;
 import org.apache.flink.api.common.functions.RichMapFunction;

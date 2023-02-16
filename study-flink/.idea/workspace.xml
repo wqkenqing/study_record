@@ -288,7 +288,7 @@
       <workItem from="1675749662699" duration="9930000" />
       <workItem from="1675823118629" duration="47221000" />
       <workItem from="1676299336750" duration="276000" />
-      <workItem from="1676378237699" duration="6240000" />
+      <workItem from="1676378237699" duration="7089000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
@@ -389,26 +389,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/sunrise/reader/MysqlReader.java</url>
           <line>35</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/function/CarReduceFuntion.java</url>
