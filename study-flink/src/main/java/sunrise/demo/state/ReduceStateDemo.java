@@ -1,15 +1,9 @@
 package sunrise.demo.state;
 
 import com.alibaba.fastjson2.JSONObject;
-import org.apache.flink.api.common.typeinfo.TypeHint;
-import org.apache.flink.api.common.typeinfo.TypeInformation;
-import org.apache.flink.api.java.functions.KeySelector;
-import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.util.Collector;
-import sunrise.demo.function.CarReduceFuntion;
-import sunrise.demo.function.WordFlatMapFunction;
+import sunrise.demo.function.agg.CarReduceFuntion;
 import sunrise.demo.pojo.CarInfo;
 
 /**

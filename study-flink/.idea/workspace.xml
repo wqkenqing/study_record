@@ -5,35 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/AvgEventUrlAggFunticon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/pojo/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/env/EnvDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/env/env.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/source/AutoEventSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/source/AutoEventSourceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/source/KafkaSourceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/source/StreamSourceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/transform/Demo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/transform/Demo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/api/transform/Demo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/CoustomWatermarkWindowStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/SessionWindowDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/SlideEventWindowStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/TumblingEventWindowStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/TumblingProcessWindowsStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/watermark/CustomEventPeriodicGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/watermark/CustomEventWatermarkStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/watermark/CustomPeriodicGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/watermark/CustomWatermarkStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/process/ProcessFunctionDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/window/CarCountProcessWindowFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CustomProcessStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/DynamicSessionWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/CarCountWindowDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudyFlink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFlink.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CoDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/CoDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/CreateCarInfoDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/CreateCarInfoDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/FlatMapDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/FlatMapDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/KeyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/KeyDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/SplitDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/TumblingWindowStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/TumblingWindowStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/AvgAggFunticon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/agg/AvgAggFunticon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/AvgAggStateFuntion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/agg/AvgAggStateFuntion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/AvgEventUrlAggFunticon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/agg/AvgEventUrlAggFunticon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/CarReduceFuntion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/agg/CarReduceFuntion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/CarValueFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/agg/CarValueFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/WordFlatMapFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/agg/WordFlatMapFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/WordMapFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/agg/WordMapFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/AggStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/AggStateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/MapStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/MapStateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/ReduceStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/ReduceStateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/ValueStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/state/ValueStateDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/SessionWindowDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/window/time/SessionWindowDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +74,9 @@
     <option name="height" value="1027" />
   </component>
   <component name="ProjectId" id="1uc5lirO7bykCTBE1ijcK28ljAc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -176,6 +167,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -200,13 +192,39 @@
       <recent name="sunrise.demo.state" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SessionWindowDemo">
+  <component name="RunManager" selected="Application.CustomProcessStream">
+    <configuration name="CarCountWindowDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.time.CarCountWindowDemo" />
+      <module name="StudyFlink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sunrise.demo.window.time.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoustomWatermarkWindowStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.time.CoustomWatermarkWindowStream" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sunrise.demo.window.time.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomProcessStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.CustomProcessStream" />
+      <module name="StudyFlink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sunrise.demo.stream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -240,39 +258,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TumblingEventWindowStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.time.TumblingEventWindowStream" />
-      <module name="StudyFlink" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sunrise.demo.window.time.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TumblingProcessWindowsStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.time.TumblingProcessWindowsStream" />
-      <module name="StudyFlink" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sunrise.demo.window.time.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CustomProcessStream" />
+        <item itemvalue="Application.CarCountWindowDemo" />
         <item itemvalue="Application.SessionWindowDemo" />
         <item itemvalue="Application.CoustomWatermarkWindowStream" />
         <item itemvalue="Application.SlideEventWindowStream" />
-        <item itemvalue="Application.TumblingEventWindowStream" />
-        <item itemvalue="Application.TumblingProcessWindowsStream" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +296,8 @@
       <workItem from="1675749662699" duration="9930000" />
       <workItem from="1675823118629" duration="49287000" />
       <workItem from="1676251947295" duration="18686000" />
-      <workItem from="1676426535800" duration="17994000" />
+      <workItem from="1676426535800" duration="23005000" />
+      <workItem from="1676525971428" duration="4510000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
@@ -392,7 +385,19 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="flink资料及源码" />
     <MESSAGE value="Merge branch 'master' of http://39.101.213.88/zhangfugang/study-flink&#10;&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit." />
     <MESSAGE value="更新文档" />
@@ -407,7 +412,7 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/function/CarReduceFuntion.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/sunrise/demo/function/agg/CarReduceFuntion.java</url>
           <line>25</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>

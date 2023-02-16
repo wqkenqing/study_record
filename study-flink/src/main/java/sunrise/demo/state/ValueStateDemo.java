@@ -5,7 +5,7 @@ import org.apache.flink.api.common.functions.RichMapFunction;
 import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import sunrise.demo.function.CarValueFunction;
+import sunrise.demo.function.agg.CarValueFunction;
 import sunrise.demo.pojo.CarInfo;
 
 /**
