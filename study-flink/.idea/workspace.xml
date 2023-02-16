@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/study_record.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PdfTool" beforeDir="false" afterPath="$PROJECT_DIR$/../PdfTool" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../word-to-pdf-and-pdf-to-word" beforeDir="false" afterPath="$PROJECT_DIR$/../word-to-pdf-and-pdf-to-word" afterDir="false" />
     </list>
@@ -180,7 +173,7 @@
       <recent name="sunrise.demo.function" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TumblingWindowDemo">
+  <component name="RunManager" selected="Application.DynamicSessionWindow">
     <configuration name="AggStateDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sunrise.demo.state.AggStateDemo" />
       <module name="StudyFlink" />
@@ -194,12 +187,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlatMapDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.FlatMapDemo" />
+    <configuration name="DynamicSessionWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.DynamicSessionWindow" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.stream.*" />
+          <option name="PATTERN" value="sunrise.demo.window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -246,13 +239,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DynamicSessionWindow" />
         <item itemvalue="Application.TumblingWindowDemo" />
         <item itemvalue="Application.AggStateDemo" />
         <item itemvalue="Application.ReduceStateDemo" />
         <item itemvalue="Application.MapStateDemo" />
-        <item itemvalue="Application.FlatMapDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +288,7 @@
       <workItem from="1675749662699" duration="9930000" />
       <workItem from="1675823118629" duration="47221000" />
       <workItem from="1676299336750" duration="276000" />
-      <workItem from="1676378237699" duration="599000" />
+      <workItem from="1676378237699" duration="6240000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
