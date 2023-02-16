@@ -1,4 +1,4 @@
-package sunrise.demo.stream;
+package sunrise.demo.stream.old;
 
 import com.alibaba.fastjson2.JSONObject;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;

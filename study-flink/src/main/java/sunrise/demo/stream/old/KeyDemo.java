@@ -1,4 +1,4 @@
-package sunrise.demo.stream;
+package sunrise.demo.stream.old;
 
 import org.apache.flink.api.common.functions.ReduceFunction;
 import org.apache.flink.api.common.typeinfo.Types;

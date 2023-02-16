@@ -1,27 +1,15 @@
-package sunrise.demo.window;
+package sunrise.demo.window.time;
 
 import com.alibaba.fastjson2.JSONObject;
-import org.apache.flink.api.common.eventtime.WatermarkStrategy;
-import org.apache.flink.api.common.typeinfo.Types;
-import org.apache.flink.api.java.tuple.Tuple2;
-import org.apache.flink.streaming.api.TimeCharacteristic;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.AssignerWithPeriodicWatermarks;
 import org.apache.flink.streaming.api.watermark.Watermark;
-import org.apache.flink.streaming.api.windowing.assigners.SlidingEventTimeWindows;
 import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows;
-import org.apache.flink.streaming.api.windowing.assigners.TumblingProcessingTimeWindows;
 import org.apache.flink.streaming.api.windowing.time.Time;
-import org.apache.flink.streaming.runtime.operators.util.AssignerWithPeriodicWatermarksAdapter;
-import sunrise.demo.function.AvgAggFunticon;
-import sunrise.demo.function.AvgAggStateFuntion;
-import sunrise.demo.function.CarReduceFuntion;
-import sunrise.demo.function.CarValueFunction;
 import sunrise.demo.pojo.CarInfo;
-
 import javax.annotation.Nullable;
-import java.time.Duration;
 
 /**
  * @author kuiqwang
@@ -29,6 +17,7 @@ import java.time.Duration;
  * @time 2023/2/13
  * @desc
  */
+@Slf4j
 public class TumblingWindowStream {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
@@ -61,8 +50,13 @@ public class TumblingWindowStream {
                     public Watermark getCurrentWatermark() {
                         return new Watermark(currentTimestamp);
                     }
-                }).keyBy(CarInfo::getCarNumber).window(TumblingEventTimeWindows.of(Time.seconds(5)));
-
+                }).keyBy(CarInfo::getCarNumber).window(TumblingEventTimeWindows.of(Time.seconds(5)))
+                .reduce((s1, s2) -> {
+                    CarInfo info = new CarInfo();
+                    info.setCarSpeed(s1.getCarSpeed() + s2.getCarSpeed());
+                    info.setCarNumber(s1.getCarNumber());
+                    return info;
+                }).print();
         env.execute();
     }
 }
