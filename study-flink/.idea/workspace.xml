@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_study/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_study/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_study/src/main/java/com/code/arithmetic/ArithmeticDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java_study/src/main/java/com/code/date/DateOperateDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/BitMapDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/function/agg/VideoSpeedAvgAggFunticon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/pojo/VideoEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/pojo/VideoOutDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/mapper/RedisSinkMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/practice/JllCarAvgSpeedCount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudyFlink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFlink.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/SideOutputStreamDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/SideOutputStreamDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/practice/JllCarAvgSpeedCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/practice/JllCarAvgSpeedCount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +284,8 @@
       <workItem from="1676426535800" duration="23005000" />
       <workItem from="1676525971428" duration="21932000" />
       <workItem from="1676873905740" duration="6988000" />
-      <workItem from="1676945240118" duration="10247000" />
+      <workItem from="1676945240118" duration="10336000" />
+      <workItem from="1676967213916" duration="5889000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>

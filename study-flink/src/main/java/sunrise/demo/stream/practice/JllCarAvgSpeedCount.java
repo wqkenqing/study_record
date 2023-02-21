@@ -7,6 +7,7 @@ import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.api.common.functions.RuntimeContext;
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
+import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -38,6 +39,9 @@ import java.util.Properties;
  */
 public class JllCarAvgSpeedCount {
     public static void main(String[] args) throws Exception {
+        ParameterTool parameter = ParameterTool.fromArgs(args);
+        String sourceTopic = parameter.get("sourceTopic");
+        String sinkTopic= parameter.get("sinkTopic");
         //source is kafka , sink is elasticsearch。
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         Properties properties = new Properties();
@@ -48,7 +52,7 @@ public class JllCarAvgSpeedCount {
         properties.setProperty("value.deserializer",
                 "org.apache.kafka.common.serialization.StringDeserializer");
         properties.setProperty("auto.offset.reset", "earliest");
-        DataStreamSource<String> videoEventStream = env.addSource(new FlinkKafkaConsumer<String>("jllsd-video-analysis-data", new SimpleStringSchema(), properties));
+        DataStreamSource<String> videoEventStream = env.addSource(new FlinkKafkaConsumer<String>(sourceTopic, new SimpleStringSchema(), properties));
         SingleOutputStreamOperator<VideoEvent> singleStream = videoEventStream.map(s ->
         {
             ObjectMapper objectMapper = new ObjectMapper();
@@ -75,16 +79,16 @@ public class JllCarAvgSpeedCount {
 //        singleStream.addSink(new RedisSink<>(poolConfig, new RedisSinkMapper()));
 
 //        /** kafka sink*/
-//        String kafkaBroker = "es01:9092";
-//        String topicName = "jll-test";
-//        Properties producerProps = new Properties();
-//        producerProps.setProperty("bootstrap.servers", kafkaBroker);
-//        FlinkKafkaProducer<String> kafkaProducer = new FlinkKafkaProducer<>(
-//                topicName,
-//                new SimpleStringSchema(),
-//                producerProps
-//        );
-//        videoEventStream.addSink(kafkaProducer);
+        String kafkaBroker = "es01:9092";
+        String topicName = "jll-test";
+        Properties producerProps = new Properties();
+        producerProps.setProperty("bootstrap.servers", kafkaBroker);
+        FlinkKafkaProducer<String> kafkaProducer = new FlinkKafkaProducer<>(
+                sinkTopic,
+                new SimpleStringSchema(),
+                producerProps
+        );
+        videoEventStream.addSink(kafkaProducer);
         env.execute();
     }
 }
