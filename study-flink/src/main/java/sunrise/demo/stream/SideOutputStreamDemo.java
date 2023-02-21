@@ -33,7 +33,7 @@ public class SideOutputStreamDemo {
         OutputTag<CarInfo> bigtag = new OutputTag<CarInfo>("big") {
         };
 //        sideCar.getSideOutput(littleTag).print("little-number");
-        sideCar.getSideOutput(bigtag).print("big-number");
+//        sideCar.getSideOutput(bigtag).print("big-number");
         env.execute();
     }
 }
