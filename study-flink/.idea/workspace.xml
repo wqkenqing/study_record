@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/sink/JllCarAvgSpeedCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/source/ClickhouseSourceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/source/ElasticsearchSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/source/EsSourceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/source/HiveSourceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/source/MysqlSourceDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/practice/JllCarAvgSpeedCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/practice/JllCarAvgSpeedCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyFlink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFlink.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +167,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.1941511" />
     <property name="project.structure.side.proportion" value="0.73333335" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -170,33 +177,20 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sunrise.demo.sink" />
       <recent name="sunrise.demo.function.agg" />
       <recent name="sunrise.demo.function.process" />
       <recent name="sunrise.demo.function" />
       <recent name="sunrise.demo.window.time.watermark" />
-      <recent name="sunrise.demo.window.time" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JllCarAvgSpeedCount">
-    <configuration name="CarCountWindowDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.window.time.CarCountWindowDemo" />
+  <component name="RunManager" selected="Application.EsSourceDemo">
+    <configuration name="EsSourceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.source.EsSourceDemo" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.window.time.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomProcessStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.CustomProcessStream" />
-      <module name="StudyFlink" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sunrise.demo.stream.*" />
+          <option name="PATTERN" value="sunrise.demo.source.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -230,6 +224,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MysqlSourceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.source.MysqlSourceDemo" />
+      <module name="StudyFlink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sunrise.demo.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SideOutputStreamDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.SideOutputStreamDemo" />
       <module name="StudyFlink" />
@@ -245,11 +252,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EsSourceDemo" />
+        <item itemvalue="Application.MysqlSourceDemo" />
         <item itemvalue="Application.JllCarAvgSpeedCount" />
         <item itemvalue="Application.SideOutputStreamDemo" />
         <item itemvalue="Application.KeyedProcessDemo" />
-        <item itemvalue="Application.CustomProcessStream" />
-        <item itemvalue="Application.CarCountWindowDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +292,7 @@
       <workItem from="1676525971428" duration="21932000" />
       <workItem from="1676873905740" duration="6988000" />
       <workItem from="1676945240118" duration="10336000" />
-      <workItem from="1676967213916" duration="5889000" />
+      <workItem from="1676967213916" duration="23365000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
@@ -420,6 +427,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
           <option name="timeStamp" value="26" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="27" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

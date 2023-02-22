@@ -171,17 +171,43 @@
 
     <!--elasticsearch-->
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-elasticsearch6 -->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-connector-elasticsearch7_2.12</artifactId>-->
+<!--            <version>${flink.version}</version>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-elasticsearch7_2.12</artifactId>
-            <version>${flink.version}</version>
+            <artifactId>flink-connector-elasticsearch7_2.11</artifactId>
+            <version>1.13.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch-hadoop</artifactId>
+            <version>7.4.1</version>
+        </dependency>
+
+
+        <!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-connector-elasticsearch-base</artifactId>-->
+<!--            <version>1.16.1</version>-->
+<!--        </dependency>-->
     <!--elasticsearch依赖报错-->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>4.5.13</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client -->
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-high-level-client</artifactId>
+            <version>7.5.1</version>
+        </dependency>
+
         <!--redis-->
         <!-- redis connector -->
         <dependency>
@@ -189,6 +215,14 @@
             <artifactId>flink-connector-redis_2.11</artifactId>
             <version>1.1.0</version>
         </dependency>
+
+        <!--flink-mysql-->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-jdbc_2.12</artifactId>
+            <version>1.12.5</version>
+        </dependency>
+
     </dependencies>
 
     <build>
