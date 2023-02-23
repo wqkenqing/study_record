@@ -10,13 +10,12 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
  * @time 2023/2/22
  * @desc
  */
-public class HiveSourceDemo {
+public class ClickhouseDemo {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-        String sql = "select * from daily_report ";
-        DataStreamSource<Tuple2<String,String>> dbpSource = env.addSource(new HiveSource("jdbc:hive2://calculation01:10000/fkb", "", "", sql));
-        dbpSource.print();
+        String query = "select * from dbp.dbp_task_monitor";
+        DataStreamSource<Tuple2<String, String>> dStream = env.addSource(new ClickSource(query));
+        dStream.print();
         env.execute();
-
     }
 }
