@@ -138,6 +138,13 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.26</version>
         </dependency>
+        <!--flink-mysql-->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-jdbc_2.12</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
 
         <!--json-->
         <!-- https://mvnrepository.com/artifact/com.alibaba.fastjson2/fastjson2 -->
@@ -197,7 +204,7 @@
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-connector-elasticsearch7_2.11</artifactId>
-            <version>1.13.1</version>
+            <version>${flink.version}</version>
         </dependency>
 
         <dependency>
@@ -233,12 +240,7 @@
             <version>1.1.0</version>
         </dependency>
 
-        <!--flink-mysql-->
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-connector-jdbc_2.12</artifactId>
-            <version>1.12.5</version>
-        </dependency>
+
         <!--hive-->
         <dependency>
             <groupId>org.apache.hive</groupId>
@@ -309,6 +311,20 @@
             <artifactId>hadoop-hdfs</artifactId>
             <version>3.1.1</version>
         </dependency>
+
+        <!--mybatis-plus 依赖-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.3.1.tmp</version>
+        </dependency>
+        <!--mybatis-plus 代码生成器依赖-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.3.1.tmp</version>
+        </dependency>
+
 
     </dependencies>
 
