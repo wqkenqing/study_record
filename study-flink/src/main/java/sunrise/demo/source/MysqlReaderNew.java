@@ -7,7 +7,6 @@ package sunrise.demo.source;/**
 
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.source.RichSourceFunction;
-import sunrise.demo.pojo.GoodsRecord;
 import sunrise.demo.util.ORMUtil;
 
 import java.sql.Connection;
@@ -15,21 +14,23 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class MysqlReader extends RichSourceFunction<GoodsRecord> {
+public class MysqlReaderNew extends RichSourceFunction<Object> {
 
 
     String con;
     String user;
     String pass;
     String sql;
+    Class cls;
     private Connection connection = null;
     private PreparedStatement ps = null;
 
-    public MysqlReader(String con, String user, String pass, String sql) {
+    public MysqlReaderNew(String con, String user, String pass, String sql, Class cls) {
         this.user = user;
         this.pass = pass;
         this.con = con;
         this.sql = sql;
+        this.cls = cls;
     }
 
     //该方法主要用于打开数据库连接，下面的ConfigKeys类是获取配置的类
@@ -45,10 +46,10 @@ public class MysqlReader extends RichSourceFunction<GoodsRecord> {
 
 
     @Override
-    public void run(SourceContext<GoodsRecord> sourceContext) throws Exception {
+    public void run(SourceContext<Object> sourceContext) throws Exception {
         ResultSet resultSet = ps.executeQuery();
         while (resultSet.next()) {
-            sourceContext.collect((GoodsRecord) ORMUtil.autoPackage(ORMUtil.getAnnotationVal(GoodsRecord.class), resultSet, GoodsRecord.class));
+            sourceContext.collect(ORMUtil.autoPackage(ORMUtil.getAnnotationVal(cls), resultSet, cls));
         }
     }
 

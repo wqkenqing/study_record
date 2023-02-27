@@ -3,7 +3,7 @@ package sunrise.demo.pojo;
 import lombok.Data;
 import sunrise.demo.annotation.DataT;
 
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * @author kuiqwang
@@ -14,11 +14,11 @@ import java.sql.Date;
 @Data
 public class GoodsRecord {
     @DataT(value = "id")
-    private int id;
+    private long id;
     @DataT(value = "goods_id")
-    private int goods_id;
+    private long goods_id;
     @DataT(value = "count")
-    private int count;
+    private long count;
     @DataT(value = "create_time")
     private Date create_time;
     @DataT(value = "user")
@@ -30,5 +30,5 @@ public class GoodsRecord {
     @DataT(value = "remark")
     private String remark;
     @DataT(value = "department_id")
-    private int department_id;
+    private long department_id;
 }

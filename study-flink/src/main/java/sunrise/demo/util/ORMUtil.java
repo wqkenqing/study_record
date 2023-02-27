@@ -2,7 +2,9 @@ package sunrise.demo.util;
 
 import com.mysql.cj.x.protobuf.MysqlxExpr;
 import sunrise.demo.annotation.DataT;
+import sunrise.demo.pojo.DailyReport;
 import sunrise.demo.pojo.GoodsRecord;
+import sunrise.demo.pojo.NcpDetail;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Type;
@@ -49,17 +51,25 @@ public class ORMUtil {
         for (int i = 1; i <= counts; i++) {
             String columnName = resultSet.getMetaData().getColumnName(i);
             int type = resultSet.getMetaData().getColumnType(i);
-            Field f = cls.getDeclaredField(columnName);
 
-            f.setAccessible(true);
-            if (type == Types.BIGINT) {
-                f.set(obj, resultSet.getInt(i));
-            }
-            if (type == Types.VARCHAR) {
-                f.set(obj, resultSet.getString(i));
-            }
-            if (type == Types.DATE) {
-                f.set(obj, resultSet.getDate(i));
+            if (null != map.get(columnName)) {
+
+                Field f = cls.getDeclaredField(map.get(columnName));
+                f.setAccessible(true);
+                if (type == Types.BIGINT) {
+                    f.set(obj, resultSet.getObject(i));
+                }
+                if (type == Types.VARCHAR) {
+                    f.set(obj, resultSet.getString(i));
+                }
+                if (type == Types.DATE) {
+                    f.set(obj, resultSet.getDate(i));
+                }
+                if (type == Types.TIMESTAMP) {
+                    f.set(obj, new Date(resultSet.getTimestamp(columnName).getTime()));
+                    //这里是将timestamp 转成了java.sql.Date
+//                    f.set(obj, resultSet.getTimestamp(columnName));
+                }
             }
         }
         return obj;
@@ -73,23 +83,24 @@ public class ORMUtil {
         }
         return flist;
     }
-//    public static void main(String[] args) throws ClassNotFoundException, SQLException, NoSuchFieldException, InstantiationException, IllegalAccessException {
-//        Class.forName("com.mysql.cj.jdbc.Driver");//加载数据库驱动
-////        connection = DriverManager.getConnection("jdbc:mysql://106.54.170.224:10328", "root", "Bmsoft2020datateam");//获取连接
-//        String username = "root";
-//        String password = "Yg123456";
-//        String dbUrl = "jdbc:mysql://namenode/fkb";
-//        String device = "t_device";
-//        String device_department = "t_device_department";
-//        String sql = "select * from goods_record";
-//        Connection connection = DriverManager.getConnection(dbUrl, username, password);//获取连接
-//        PreparedStatement ps = connection.prepareStatement(sql);
-//        ResultSet resultSet = ps.executeQuery();
-//        while (resultSet.next()) {
-//            Map<String, String> res = getAnnotationVal(GoodsRecord.class);
-//            GoodsRecord goodsRecord = (GoodsRecord) autoPackage(res, resultSet, GoodsRecord.class);
-//            System.out.println(goodsRecord);
-//        }
-//    }
+
+    public static void main(String[] args) throws ClassNotFoundException, SQLException, NoSuchFieldException, InstantiationException, IllegalAccessException {
+        Class.forName("com.mysql.cj.jdbc.Driver");//加载数据库驱动
+//        connection = DriverManager.getConnection("jdbc:mysql://106.54.170.224:10328", "root", "Bmsoft2020datateam");//获取连接
+        String username = "root";
+        String password = "Yg123456";
+        String dbUrl = "jdbc:mysql://namenode/fkb";
+        String device = "t_device";
+        String device_department = "daily_report";
+        String sql = "select * from daily_report";
+        Connection connection = DriverManager.getConnection(dbUrl, username, password);//获取连接
+        PreparedStatement ps = connection.prepareStatement(sql);
+        ResultSet resultSet = ps.executeQuery();
+        while (resultSet.next()) {
+            Map<String, String> res = getAnnotationVal(DailyReport.class);
+            DailyReport dailyReport = (DailyReport) autoPackage(res, resultSet, DailyReport.class);
+            System.out.println(dailyReport);
+        }
+    }
 
 }

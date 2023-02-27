@@ -11,7 +11,9 @@ import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer;
 import org.apache.flink.table.api.Table;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 import sunrise.demo.pojo.VideoEvent;
+
 import static org.apache.flink.table.api.Expressions.*;
+
 import org.apache.flink.table.api.*;
 
 import java.util.Properties;
@@ -42,14 +44,9 @@ public class TableDemo {
             return mapper.readValue(s, VideoEvent.class);
         }).returns(TypeInformation.of(VideoEvent.class));
         Table videoEventTable = tableEnv.fromDataStream(videoEventStream);
-        Table video = videoEventTable.groupBy($("camera")).select($("camera"),$("speed").avg().distinct());;
-//        Table res = video
-//        Table video_new=video.dropColumns($("speed"));
-//        Table video_new=video.dropColumns($("speed"));
-//        Table res = tableEnv.sqlQuery("select * from " + videoEventTable);
-//        res=res.where($("speed").isGreaterOrEqual(70));
+        Table video = videoEventTable.groupBy($("camera")).select($("camera"), $("speed").avg().distinct());
+        ;
         tableEnv.toDataStream(video).print();
-//        tableEnv.toDataStream(video_new).print();
         env.execute();
 
     }

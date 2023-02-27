@@ -1,17 +1,17 @@
 package sunrise.demo.table;
 
-import org.apache.flink.api.common.typeinfo.TypeInformation;
+import com.alibaba.fastjson2.JSONObject;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
+import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.table.api.Schema;
 import org.apache.flink.table.api.Table;
 import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
-import org.apache.flink.types.Row;
 import sunrise.demo.pojo.GoodsRecord;
-import sunrise.demo.source.MysqlReader;
-import sunrise.demo.util.ORMUtil;
+import sunrise.demo.pojo.NcpDetail;
+import sunrise.demo.source.MysqlReaderNew;
 
-import java.util.stream.Collectors;
+import java.nio.charset.StandardCharsets;
 
 import static org.apache.flink.table.api.Expressions.$;
 
@@ -30,7 +30,8 @@ public class TableDemo3 {
         String dbUrl = "jdbc:mysql://namenode/fkb";
         String device = "t_device";
         String device_department = "t_device_department";
-        String sql = "select * from goods_record";
+//        String sql = "select * from goods_record";
+        String sql = "select * from ncp_detail";
 //        JdbcInputFormat  goodsInput = JdbcInputFormat.buildJdbcInputFormat()
 //                .setDrivername("com.mysql.jdbc.Driver")
 //                .setDBUrl(dbUrl)
@@ -39,9 +40,15 @@ public class TableDemo3 {
 //                .setQuery(sql)
 //                .setRowTypeInfo(new RowTypeInfo())
 //                .finish();
-        DataStreamSource<GoodsRecord> goodsRecord = env.addSource(new MysqlReader(dbUrl, username, password, sql));
-        Table goods = tableEnv.fromDataStream(goodsRecord).filter($("user").isNotNull());
-        Table goodss = goods.where($("user").isEqual("魏新"));
-        goodss.execute().print();
+        DataStreamSource<Object> goodsRecord = env.addSource(new MysqlReaderNew(dbUrl, username, password, sql, NcpDetail.class));
+        SingleOutputStreamOperator<NcpDetail>sgood= goodsRecord.map(s -> {
+            ObjectMapper mapper = new ObjectMapper();
+            return mapper.convertValue(s, NcpDetail.class);
+        });
+
+//        Table goods = tableEnv.fromDataStream(sgood).filter($("user").isNotNull());
+        Table goods = tableEnv.fromDataStream(sgood);
+//        Table goodss = goods.where($("user").isEqual("魏新"));
+        goods.execute().print();
     }
 }
