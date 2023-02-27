@@ -39,8 +39,9 @@ public class MysqlReaderNew extends RichSourceFunction<Object> {
         super.open(parameters);
         Class.forName("com.mysql.cj.jdbc.Driver");//加载数据库驱动
 //        connection = DriverManager.getConnection("jdbc:mysql://106.54.170.224:10328", "root", "Bmsoft2020datateam");//获取连接
-
-        connection = DriverManager.getConnection(con, user, pass);//获取连接
+        if (connection == null) {
+            connection = DriverManager.getConnection(con, user, pass);//获取连接
+        }
         ps = connection.prepareStatement(sql);
     }
 
@@ -49,7 +50,7 @@ public class MysqlReaderNew extends RichSourceFunction<Object> {
     public void run(SourceContext<Object> sourceContext) throws Exception {
         ResultSet resultSet = ps.executeQuery();
         while (resultSet.next()) {
-            sourceContext.collect(ORMUtil.autoPackage(ORMUtil.getAnnotationVal(cls), resultSet, cls));
+            sourceContext.collect(ORMUtil.AutoPackageByClassAnntation(cls, resultSet));
         }
     }
 

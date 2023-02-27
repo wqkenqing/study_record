@@ -1,18 +1,13 @@
 package sunrise.demo.util;
 
-import com.mysql.cj.x.protobuf.MysqlxExpr;
 import sunrise.demo.annotation.DataT;
-import sunrise.demo.pojo.DailyReport;
-import sunrise.demo.pojo.GoodsRecord;
-import sunrise.demo.pojo.NcpDetail;
+import sunrise.demo.annotation.Inject;
+import sunrise.demo.pojo.TUser;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.Type;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.sql.Date;
+import java.util.*;
 
 /**
  * @author kuiqwang
@@ -53,7 +48,6 @@ public class ORMUtil {
             int type = resultSet.getMetaData().getColumnType(i);
 
             if (null != map.get(columnName)) {
-
                 Field f = cls.getDeclaredField(map.get(columnName));
                 f.setAccessible(true);
                 if (type == Types.BIGINT) {
@@ -67,6 +61,56 @@ public class ORMUtil {
                 }
                 if (type == Types.TIMESTAMP) {
                     f.set(obj, new Date(resultSet.getTimestamp(columnName).getTime()));
+                    //这里是将timestamp 转成了java.sql.Date
+//                    f.set(obj, resultSet.getTimestamp(columnName));
+                }
+            }
+        }
+        return obj;
+    }
+
+    /**
+     * 通过类名上的注解进行解析，并反注入生成POJO实例
+     */
+    public static Object AutoPackageByClassAnntation(Class cls, ResultSet resultSet) throws SQLException, InstantiationException, IllegalAccessException, NoSuchFieldException {
+        //创建对象实例
+        Object obj = cls.newInstance();
+
+        //获取注解值，即表名
+        Inject inject = (Inject) cls.getAnnotation(Inject.class);
+//        String tableName = inject.value();
+        int colCount = resultSet.getMetaData().getColumnCount();
+        for (int i = 1; i <= colCount; i++) {
+            String colName = resultSet.getMetaData().getColumnName(i);
+            String col = analysisSourceFeildToAttribute(colName);
+            Field f = null;
+            try {
+                f = cls.getDeclaredField(col);
+            } catch (Exception e) {
+                //不管
+
+            }
+            int type = resultSet.getMetaData().getColumnType(i);
+            if (null != f) {
+                f.setAccessible(true);
+                if (type == Types.BIGINT) {
+                    f.set(obj, resultSet.getObject(i));
+                }
+                if (type == Types.VARCHAR) {
+                    f.set(obj, resultSet.getString(i));
+                }
+                if (type == Types.DATE) {
+                    f.set(obj, resultSet.getDate(i));
+                }
+                if (type == Types.TIMESTAMP) {
+                    try {
+                        if (f != null) {
+                            f.set(obj, new Date(resultSet.getTimestamp(colName).getTime()));
+                        }
+                    } catch (Exception e) {
+                        System.out.println(f.getName());
+                    }
+
                     //这里是将timestamp 转成了java.sql.Date
 //                    f.set(obj, resultSet.getTimestamp(columnName));
                 }
@@ -92,15 +136,32 @@ public class ORMUtil {
         String dbUrl = "jdbc:mysql://namenode/fkb";
         String device = "t_device";
         String device_department = "daily_report";
-        String sql = "select * from daily_report";
+        String sql = "select * from t_user";
         Connection connection = DriverManager.getConnection(dbUrl, username, password);//获取连接
         PreparedStatement ps = connection.prepareStatement(sql);
         ResultSet resultSet = ps.executeQuery();
         while (resultSet.next()) {
-            Map<String, String> res = getAnnotationVal(DailyReport.class);
-            DailyReport dailyReport = (DailyReport) autoPackage(res, resultSet, DailyReport.class);
+            TUser dailyReport = (TUser) AutoPackageByClassAnntation(TUser.class, resultSet);
             System.out.println(dailyReport);
         }
+
+    }
+
+    /**
+     * 解析字段名并与属性名匹配
+     */
+    public static String analysisSourceFeildToAttribute(String field) {
+        StringBuffer sb = new StringBuffer();
+        if (field.contains("_")) {
+            String[] fields = field.split("_");
+            sb.append(fields[0]);
+            for (int a = 1; a <= fields.length - 1; a++) {
+                sb.append(fields[a].substring(0, 1).toUpperCase(Locale.ROOT) + fields[a].substring(1));
+            }
+        } else {
+            sb.append(field);
+        }
+        return sb.toString();
     }
 
 }
