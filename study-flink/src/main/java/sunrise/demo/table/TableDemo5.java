@@ -41,9 +41,11 @@ public class TableDemo5 {
             return mapper.convertValue(s, TUser.class);
         });
 
-        Table ncp = tableEnv.fromDataStream(nsingle).as("n").renameColumns($("id").as("nid"));
-        Table user = tableEnv.fromDataStream(usingle).as("u").select($("id"), $("name"), $("phone"));
-        ncp.join(user).where($("userId").isEqual($("id")))
-                .execute().print();
+        Table ncp = tableEnv.fromDataStream(nsingle).as("n").renameColumns($("id").as("nid")).select($("nid"), $("health"));
+        Table user = tableEnv.fromDataStream(usingle).as("u").select($("id"), $("name"));
+//        ncp.join(user).where($("userId").isEqual($("id")))
+//                .execute().print();
+        ncp.unionAll(user).execute().print();
+
     }
 }

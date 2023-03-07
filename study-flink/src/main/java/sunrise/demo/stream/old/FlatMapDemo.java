@@ -1,6 +1,8 @@
 package sunrise.demo.stream.old;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
+import org.apache.flink.api.common.typeinfo.Types;
+import org.apache.flink.api.java.tuple.Tuple;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.streaming.api.datastream.DataStreamSource;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -25,7 +27,13 @@ public class FlatMapDemo {
                 ;
             }
         };
-        words.flatMap(wordFlatMap).print();
+//        words.flatMap(wordFlatMap).print();
+        words.flatMap((String s, Collector<Tuple2<String, Integer>> collector) -> {
+                    for (String ss : s.split("\\s+")) {
+                        collector.collect(Tuple2.of(ss, 1));
+                    }
+                }).returns(Types.TUPLE(Types.STRING, Types.INT))
+                .print();
         env.execute();
 
     }

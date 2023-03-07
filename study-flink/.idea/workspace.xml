@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="更新文档">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/pojo/TUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/connector/KafkaSourceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/source/DemoSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/sql/SqlDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/util/DBinfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyFlink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFlink.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/annotation/Inject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/annotation/Inject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/pojo/NcpDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/pojo/NcpDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/source/MysqlReaderNew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/source/MysqlReaderNew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/CoDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/CoDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/FlatMapDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/FlatMapDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/util/ORMUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/util/ORMUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,14 +181,27 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sunrise.demo.connector" />
       <recent name="sunrise.demo.source" />
       <recent name="sunrise.demo.annotation" />
       <recent name="sunrise.demo.sink" />
       <recent name="sunrise.demo.function.agg" />
-      <recent name="sunrise.demo.function.process" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TableDemo5">
+  <component name="RunManager" selected="Application.TableDemo6">
+    <configuration name="KafkaSourceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.connector.KafkaSourceDemo" />
+      <module name="StudyFlink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sunrise.demo.connector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ORMUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sunrise.demo.util.ORMUtil" />
       <module name="StudyFlink" />
@@ -197,38 +215,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.table.TableDemo2" />
+    <configuration name="SqlDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.sql.SqlDemo1" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.table.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TableDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.table.TableDemo3" />
-      <module name="StudyFlink" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sunrise.demo.table.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TableDemo4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.table.TableDemo4" />
-      <module name="StudyFlink" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sunrise.demo.table.*" />
+          <option name="PATTERN" value="sunrise.demo.sql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -249,13 +241,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TableDemo6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.table.TableDemo6" />
+      <module name="StudyFlink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sunrise.demo.table.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TableDemo6" />
+        <item itemvalue="Application.KafkaSourceDemo" />
+        <item itemvalue="Application.SqlDemo1" />
         <item itemvalue="Application.TableDemo5" />
         <item itemvalue="Application.ORMUtil" />
-        <item itemvalue="Application.TableDemo4" />
-        <item itemvalue="Application.TableDemo3" />
-        <item itemvalue="Application.TableDemo2" />
       </list>
     </recent_temporary>
   </component>
@@ -292,7 +297,8 @@
       <workItem from="1676873905740" duration="6988000" />
       <workItem from="1676945240118" duration="10336000" />
       <workItem from="1676967213916" duration="89921000" />
-      <workItem from="1677461246680" duration="23593000" />
+      <workItem from="1677461246680" duration="71676000" />
+      <workItem from="1678168553226" duration="2361000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>

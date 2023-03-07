@@ -16,6 +16,7 @@ import java.util.HashMap;
  */
 public class CoDemo {
     final static HashMap carID = new HashMap();
+
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         DataStreamSource<String> carIdSource = env.readTextFile("/Users/kuiqwang/Desktop/gitfiles/study_record/study-flink/src/main/resources/carFlow_all_column_test.txt").setParallelism(1);

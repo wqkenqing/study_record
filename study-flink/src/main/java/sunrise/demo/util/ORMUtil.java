@@ -108,7 +108,7 @@ public class ORMUtil {
                             f.set(obj, new Date(resultSet.getTimestamp(colName).getTime()));
                         }
                     } catch (Exception e) {
-                        System.out.println(f.getName());
+//                        System.out.println(f.getName());
                     }
 
                     //这里是将timestamp 转成了java.sql.Date
