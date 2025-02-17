@@ -5,19 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6073c2ff-5b0f-4a2f-8d91-5f766c69638b" name="Default Changelist" comment="更新文档">
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/connector/KafkaSourceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/source/DemoSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/sql/SqlDemo1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/util/DBinfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hive_demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hive_demo/src/main/java/HiveDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_skill/base/demo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_skill/base/demo/monitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python_skill/base/demo/play.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/pojo/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/source/NumberSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/HylTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/util/pic/GamePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/util/pic/JumpingAppleGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/newstream/NewStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/sunrise/newstream/NewStream1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_skill/base/dmo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../python_skill/base/dmo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StudyFlink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StudyFlink.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/CoDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/CoDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/FlatMapDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/FlatMapDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/util/ORMUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/util/ORMUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/batch/Demo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/batch/Demo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/batch/Demo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/batch/Demo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/SplitDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/stream/old/SplitDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +56,13 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/sunrise/demo/source/MysqlReaderNew.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo7.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo6.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo4.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/sunrise/demo/table/TableDemo.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
       <scroll-view-position x="0" y="0" />
@@ -63,6 +77,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1627" />
@@ -161,40 +178,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.1941511" />
-    <property name="project.structure.side.proportion" value="0.73333335" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CreateCarInfoDemo.executor": "Run",
+    "Application.CustomProcessStream.executor": "Run",
+    "Application.Demo1.executor": "Run",
+    "Application.Demo2.executor": "Run",
+    "Application.Demo3.executor": "Run",
+    "Application.EnvDemo.executor": "Run",
+    "Application.FlinkDemo.executor": "Run",
+    "Application.NewStream (1).executor": "Run",
+    "Application.NewStream.executor": "Run",
+    "Application.NewStream1.executor": "Run",
+    "Application.SplitDemo.executor": "Run",
+    "Application.SqlDemo1.executor": "Run",
+    "Application.sunrise.demo.stream.api.transform.Demo2.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "mbp",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/kuiqwang/Desktop/gitfiles/study_record/study-flink/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sunrise.demo.function.agg" />
       <recent name="sunrise.demo.connector" />
       <recent name="sunrise.demo.source" />
       <recent name="sunrise.demo.annotation" />
       <recent name="sunrise.demo.sink" />
-      <recent name="sunrise.demo.function.agg" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TableDemo6">
-    <configuration name="KafkaSourceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.connector.KafkaSourceDemo" />
+  <component name="RunManager" selected="Application.SplitDemo">
+    <configuration name="CustomProcessStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.CustomProcessStream" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.connector.*" />
+          <option name="PATTERN" value="sunrise.demo.stream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,12 +232,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ORMUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.util.ORMUtil" />
+    <configuration name="NewStream (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.newstream.NewStream" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.util.*" />
+          <option name="PATTERN" value="sunrise.newstream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -215,12 +245,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SqlDemo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.sql.SqlDemo1" />
+    <configuration name="NewStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.newstream.NewStream" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.sql.*" />
+          <option name="PATTERN" value="sunrise.newstream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -228,12 +258,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableDemo5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.table.TableDemo5" />
+    <configuration name="NewStream1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.newstream.NewStream1" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.table.*" />
+          <option name="PATTERN" value="sunrise.newstream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -241,12 +271,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableDemo6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sunrise.demo.table.TableDemo6" />
+    <configuration name="SplitDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sunrise.demo.stream.old.SplitDemo" />
       <module name="StudyFlink" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sunrise.demo.table.*" />
+          <option name="PATTERN" value="sunrise.demo.stream.old.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -256,13 +286,21 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TableDemo6" />
-        <item itemvalue="Application.KafkaSourceDemo" />
-        <item itemvalue="Application.SqlDemo1" />
-        <item itemvalue="Application.TableDemo5" />
-        <item itemvalue="Application.ORMUtil" />
+        <item itemvalue="Application.SplitDemo" />
+        <item itemvalue="Application.NewStream1" />
+        <item itemvalue="Application.NewStream" />
+        <item itemvalue="Application.NewStream (1)" />
+        <item itemvalue="Application.CustomProcessStream" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -298,7 +336,21 @@
       <workItem from="1676945240118" duration="10336000" />
       <workItem from="1676967213916" duration="89921000" />
       <workItem from="1677461246680" duration="71676000" />
-      <workItem from="1678168553226" duration="2361000" />
+      <workItem from="1678168553226" duration="3053000" />
+      <workItem from="1678347490111" duration="2128000" />
+      <workItem from="1678437392164" duration="1509000" />
+      <workItem from="1678787138249" duration="3179000" />
+      <workItem from="1678867823649" duration="714000" />
+      <workItem from="1679021123786" duration="855000" />
+      <workItem from="1679378177985" duration="39000" />
+      <workItem from="1679390201616" duration="7661000" />
+      <workItem from="1681027204508" duration="4190000" />
+      <workItem from="1681262245075" duration="1872000" />
+      <workItem from="1685499635025" duration="702000" />
+      <workItem from="1688972231992" duration="1151000" />
+      <workItem from="1689660104083" duration="12000" />
+      <workItem from="1691475709026" duration="2321000" />
+      <workItem from="1739412045282" duration="28410000" />
     </task>
     <task id="LOCAL-00001" summary="flink资料及源码">
       <created>1592210541033</created>
@@ -433,12 +485,12 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-java/1.14.5/flink-table-api-java-1.14.5.jar!/org/apache/flink/table/api/Expressions.class</url>
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.14.5/flink-table-api-java-1.14.5.jar!/org/apache/flink/table/api/Expressions.class</url>
           <line>196</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.m2/repository/org/apache/flink/flink-table-api-java/1.14.5/flink-table-api-java-1.14.5.jar!/org/apache/flink/table/operations/utils/AggregateOperationFactory.class</url>
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-table-api-java/1.14.5/flink-table-api-java-1.14.5.jar!/org/apache/flink/table/operations/utils/AggregateOperationFactory.class</url>
           <line>198</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
@@ -472,6 +524,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.apache.flink.table.api.ValidationException" package="org.apache.flink.table.api" />
           <option name="timeStamp" value="42" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.flink.api.common.functions.InvalidTypesException" package="org.apache.flink.api.common.functions" />
+          <option name="timeStamp" value="58" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -16,7 +16,7 @@ import org.apache.flink.util.Collector;
 public class Demo2 {
     public static void main(String[] args) throws Exception {
         ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
-        DataSet<String> dset = env.readTextFile("/Users/kuiqwang/Desktop/tengxun_class/study-flink/src/main/resources/carFlow_all_column_test.txt");
+        DataSet<String> dset = env.readTextFile("/Users/kuiqwang/Desktop/gitfiles/study_record/study-flink/target/classes/carFlow_all_column_test.txt");
         dset.map(s -> {
             return Tuple2.of(s.split(",")[0], 1);
         }).returns(Types.TUPLE(Types.STRING, Types.INT)).groupBy(0).sum(1).sortPartition(0, Order.ASCENDING).print();

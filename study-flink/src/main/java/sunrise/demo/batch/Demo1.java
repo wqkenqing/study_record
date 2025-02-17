@@ -20,8 +20,6 @@ public class Demo1 {
             for (String ss : s.split(",")) {
                 collector.collect(new Tuple2<String, Integer>(ss, 1));
             }
-            ;
         }).returns(Types.TUPLE(Types.STRING, Types.INT)).groupBy(0).sum(1).print();
-
     }
 }

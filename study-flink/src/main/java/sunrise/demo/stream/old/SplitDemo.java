@@ -33,7 +33,8 @@ public class SplitDemo {
             }
         };
 //        dataSource.process(processFunction).print();
-        dataSource.process(processFunction).getSideOutput(outputTag).print();
+//        dataSource.process(processFunction).getSideOutput(outputTag).print();
+
         env.execute();
     }
 }
